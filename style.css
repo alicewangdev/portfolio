@@ -20,6 +20,35 @@ a:hover {
     transition:0.5s;
 }
 
+  
+@keyframes color-change {
+    0% { color: rgb(89, 150, 104); }
+    25% { color: rgb(114, 156, 125); }
+    50% { color: rgb(147, 172, 154); }
+    100% { color: rgb(89, 150, 104); }
+}
+
+.wavy {
+    animation-name: wavy;
+    animation-duration: 1.3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  @keyframes wavy {
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: -15px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+
 /*
       Rollover Image
      */
