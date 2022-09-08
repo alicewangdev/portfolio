@@ -5,12 +5,14 @@ html {
 
 h1, h2, h3, h5 {
     font-family: 'Inter';
+    color:white;
 }
 
 a {
     font-family: 'Inter';
-    color: #5A75D2;
+    color:white;
     cursor: none;
+    text-decoration: underline;
 }
 a:hover {
     font-family: 'Inter';
@@ -18,9 +20,13 @@ a:hover {
     cursor: none;
     text-decoration: none;
     transition:0.5s;
+    text-decoration: underline;
 }
 
-  
+body {
+    background-color: black;
+}
+
 
 /* the dot used for the cursor */
 #pointer-dot {
