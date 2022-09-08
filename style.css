@@ -21,58 +21,6 @@ a:hover {
 }
 
   
-@keyframes color-change {
-    0% { color: rgb(89, 150, 104); }
-    25% { color: rgb(114, 156, 125); }
-    50% { color: rgb(147, 172, 154); }
-    100% { color: rgb(89, 150, 104); }
-}
-
-.wavy {
-    animation-name: wavy;
-    animation-duration: 1.3s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
-    position: relative;
-    top: 0;
-    left: 0;
-  }
-  @keyframes wavy {
-    0% {
-      top: 0px;
-    }
-    50% {
-      top: -15px;
-    }
-    100% {
-      top: 0px;
-    }
-  }
-
-/*
-      Rollover Image
-     */
-.figure {
-    position: relative;
-    width: 360px; /* can be omitted for a regular non-lazy image */
-    max-width: 100%;
-}
-
-.figure img.image-hover {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    object-fit: contain;
-    opacity: 0;
-    transition: opacity .2s;
-}
-
-.figure:hover img.image-hover {
-    opacity: 1;
-}
-
 
 /* the dot used for the cursor */
 #pointer-dot {
@@ -103,43 +51,5 @@ a:hover {
     z-index: 102;
     pointer-events: none;
 }
-
-/* navbar */
-nav {
-    background-color: white;
-    z-index: 3000;
-}
-
-.navbar ul {
-    justify-content: flex-end;
-}
-
-.navbar .nav-item .nav-link {
-    font-family: "Inter";
-    font-weight: 500;
-    color: black;
-    transition: all 0.3s ease 0s;
-}
-
-.navbar .nav-item .nav-link:hover{
-    color: #F58220;
-}
-
-
-
-.navbar-brand img {
-    width: 40px;
-}
-
-.navbar {
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.459);
-    
-    padding: .5rem 1rem;
-}
-
 
 
